@@ -1,0 +1,14 @@
+# WebStorm settings
+.idea/
+
+# macOS folder settings
+.DS_Store
+
+# NPM modules
+node_modules/
+
+# Webpack cache
+.cache/
+
+# Build folder
+build/
