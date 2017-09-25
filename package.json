@@ -1,0 +1,51 @@
+{
+  "name": "react-typescript-starter",
+  "description": " ",
+  "repository": "https://github.com/adamelliotfields/react-typescript-starter.git",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.8",
+    "@types/jest": "^21.1.0",
+    "@types/node": "^8.0.30",
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "@types/react-hot-loader": "^3.0.4",
+    "@types/webpack": "^3.0.12",
+    "@types/webpack-env": "^1.13.1",
+    "autoprefixer": "^7.1.4",
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-core": "^6.26.0",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-preset-react-latest": "^6.0.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "enzyme": "^2.9.1",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.1.0",
+    "offline-plugin": "^4.8.4",
+    "postcss-loader": "^2.0.6",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "react-test-renderer": "^15.6.1",
+    "serve": "^6.1.0",
+    "style-loader": "^0.18.2",
+    "ts-jest": "^21.0.1",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-messages": "^1.0.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack",
+    "test": "cross-env NODE_ENV=test jest --config jest.config.json",
+    "serve": "serve build"
+  }
+}
