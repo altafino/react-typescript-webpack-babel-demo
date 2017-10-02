@@ -1,16 +1,15 @@
 {
+  "setupFiles": ["<rootDir>/jest.setup.ts"],
+  "testMatch": ["**/?(*.)(spec|test).ts?(x)"],
   "globals": {
     "ts-jest": {
       "useBabelrc": true
     }
   },
-  "testMatch": [
-    "**/?(*.)(spec|test).ts?(x)"
-  ],
   "transform": {
     "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
-    "^.+\\.(css|scss|less)$": "<rootDir>/src/test/resources/transforms/styleTransform.js",
-    "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/resources/transforms/fileTransform.js"
+    "^.+\\.(css|scss|less)$": "<rootDir>/test/transforms/styleTransform.js",
+    "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/transforms/fileTransform.js"
   },
   "moduleFileExtensions": [
     "js",
