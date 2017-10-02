@@ -2,8 +2,8 @@ import React, { ComponentLifecycle } from 'react';
 import ReactDOM from 'react-dom';
 import { shallow, mount, render, ShallowWrapper } from 'enzyme';
 
-// Need to mock App.css and logo.svg
-import App from '../../../main/webapp/components/App';
+// Need to mock App.css and AppLogo.svg
+import App from '../../src/components/App';
 import Mock = jest.Mock;
 
 describe('<App />', () => {
@@ -33,9 +33,9 @@ describe('<App />', () => {
   });
 
   // Enzyme static render test
-  test('renders an h1 with the text "React TypeScript Starter"', () => {
+  test('renders an h1 with the text "React TypeScript Demo"', () => {
     const wrapper: Cheerio = render(<App />);
 
-    expect(wrapper.find('h1').text()).toEqual('React TypeScript Starter');
+    expect(wrapper.find('h1').text()).toEqual('React TypeScript Demo');
   });
 });
